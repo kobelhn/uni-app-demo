@@ -7,7 +7,7 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "耀玥诚品",
-				"navigationStyle": "custom"
+				"enablePullDownRefresh": false
 			}
 		}
 	    ,{
@@ -20,7 +20,7 @@
             
         }
         ,{
-            "path" : "pages/bag/bag",
+            "path" : "pages/cart/cart",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "购物车",
@@ -42,7 +42,7 @@
 				"selectedIconPath": "static/icons/home-hover.png"
 			},
 			{
-				"pagePath": "pages/bag/bag",
+				"pagePath": "pages/cart/cart",
 				"text": "购物车",
 				"iconPath": "static/icons/bag.png",
 				"selectedIconPath": "static/icons/bag-hover.png"
@@ -59,6 +59,7 @@
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "耀玥诚品",
 		"navigationBarBackgroundColor": "#FB6B6F",
-		"backgroundColor": "#FB6B6F"
+		"backgroundColor": "#FB6B6F",
+		"navigationStyle": "custom"
 	}
 }
