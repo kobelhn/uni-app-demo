@@ -1,8 +1,8 @@
 <template>
 	<view class="cart-container">
-		<u-navbar :isBack="false" isFixed :borderBottom="false">
+		<nav-bar bg="gradient">
 			<text class="nav-title">购物车</text>
-		</u-navbar>
+		</nav-bar>
 		<u-swipe-action @click="deleteItem" :index="index" v-for="(item, index) in goodsList" :key="item.id"  bg-color="#FFF" :options="options">
 			<view :class="item.status === 0 ? 'cart-item disabled' : 'cart-item'">
 				<u-checkbox v-if="item.status !== 0" class="cart-item-checkbox" size="40" shape="circle" v-model="item.checked"></u-checkbox>
@@ -42,7 +42,12 @@
 </template>
 
 <script>
+	import NavBar from '@/components/public/NavBar.vue';
+	
 	export default {
+		components: {
+			NavBar
+		},
 		data() {
 			return {
 				// TODO：模拟数据，需改成从接口获取真实数据

@@ -1,8 +1,8 @@
 <template>
 	<view class="index-content">
-		<u-navbar :isBack="false" isFixed :borderBottom="false">
+		<nav-bar bg="normal">
 			<image class="logo" src="../../static/logo.png"></image>
-		</u-navbar>
+		</nav-bar>
 		<view class="module-title">上新好物</view>
 		<view class="goods-list margin">
 			<good-item class="good-item" :good="item" v-for="item in list" :key="item.id" />
@@ -15,11 +15,13 @@
 </template>
 
 <script>
-	import GoodItem from '@/components/public/GoodItem.vue'
+	import GoodItem from '@/components/public/GoodItem.vue';
+	import NavBar from '@/components/public/NavBar.vue';
 	
 	export default {
 		components: {
-			GoodItem
+			GoodItem,
+			NavBar
 		},
 		data() {
 			return {

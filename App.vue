@@ -19,6 +19,7 @@
 		font-family: PingFangSC-Medium, PingFang SC;
 		background: $uni-bg-color-grey;
 	}
+	
 	// 自定义导航栏的标题样式
 	.nav-title {
 		font-size: 32rpx;

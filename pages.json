@@ -11,7 +11,7 @@
 			}
 		}
 	    ,{
-            "path" : "pages/my/my",
+            "path" : "pages/me/me",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "我的",
@@ -48,7 +48,7 @@
 				"selectedIconPath": "static/icons/bag-hover.png"
 			},
 			{
-				"pagePath": "pages/my/my",
+				"pagePath": "pages/me/me",
 				"text": "我的",
 				"iconPath": "static/icons/me.png",
 				"selectedIconPath": "static/icons/me-hover.png"
