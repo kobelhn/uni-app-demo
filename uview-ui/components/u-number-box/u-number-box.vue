@@ -2,16 +2,16 @@
 	<view class="u-numberbox">
 		<view class="u-icon-minus" @touchstart.stop.prevent="btnTouchStart('minus')" @touchend.stop.prevent="clearTimer" :class="{ 'u-icon-disabled': disabled || inputVal <= min }"
 		    :style="{
-				background: bgColor,
+				background: '#FFF',
 				height: inputHeight + 'rpx',
 				color: color
 			}">
-			<u-icon name="minus" :size="size"></u-icon>
+			<u-icon name="minus" size="24"></u-icon>
 		</view>
 		<input :disabled="disabledInput || disabled" :cursor-spacing="getCursorSpacing" :class="{ 'u-input-disabled': disabled }"
 		    v-model="inputVal" class="u-number-input" @blur="onBlur" @focus="onFocus"
 		    type="number" :style="{
-				color: color,
+				color: '#33',
 				fontSize: size + 'rpx',
 				background: bgColor,
 				height: inputHeight + 'rpx',
@@ -19,11 +19,11 @@
 			}" />
 		<view class="u-icon-plus" @touchstart.stop.prevent="btnTouchStart('plus')" @touchend.stop.prevent="clearTimer" :class="{ 'u-icon-disabled': disabled || inputVal >= max }"
 		    :style="{
-				background: bgColor,
+				background: '#FFF',
 				height: inputHeight + 'rpx',
 				color: color
 			}">
-			<u-icon name="plus" :size="size"></u-icon>
+			<u-icon name="plus" size="24"></u-icon>
 		</view>
 	</view>
 </template>
@@ -329,7 +329,7 @@
 		position: relative;
 		text-align: center;
 		padding: 0;
-		margin: 0 6rpx;
+		// margin: 0 6rpx;
 		@include vue-flex;
 		align-items: center;
 		justify-content: center;

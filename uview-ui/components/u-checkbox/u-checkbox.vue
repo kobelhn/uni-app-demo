@@ -273,7 +273,7 @@
 			word-wrap: break-word;
 			margin-left: 10rpx;
 			margin-right: 24rpx;
-			color: $u-content-color;
+			color: $u-main-color;
 			font-size: 30rpx;
 			
 			&--disabled {

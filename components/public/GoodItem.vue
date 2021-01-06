@@ -74,12 +74,6 @@
 			color: $uni-color-primary;
 			font-weight: bold;
 			font-family: DINPro-Bold, DINPro;
-			.int {
-				font-size: 36rpx;
-			}
-			.dec {
-				font-size: 28rpx;
-			}
 		}
 	}
 }
