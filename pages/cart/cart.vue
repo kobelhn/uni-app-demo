@@ -267,7 +267,7 @@
 		}
 		&-price {
 			font-size: 24rpx;
-			text-align: center;
+			text-align: right;
 			margin-right: 20rpx;
 			&-top {
 				.int,.dec {
